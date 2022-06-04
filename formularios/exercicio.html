@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercicio.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div>
+        <form>
+            <div class="c1">
+                <h1>Cadastro</h1>
+                <p>Nome: <input type="text" placeholder="Digite o nome"></p>
+                <p>Endereço: <input name="txtEndereco" type="text" size="50" placeholder="Digite o endereço" maxlength="50"> 
+                    N°: <input name="txtNumero" type="text" size="10" maxlenght="10" placeholder="Digite o número"> </p>
+                <p>Data de nascimento: <input type="date" name="nascimento">Idade:  <input type="number" name="idade" min="1" max="100"></p>
+                <p>Telefone: <input placeholder="Digite o telefone" type="tel" name="usertel"></p>
+                <p> <input name="btnLimpar" type="reset" value="Limpar">
+                    <input name="btnEnviar" type="submit" value="Enviar">
+                </p>
+            </div>
+            <hr>
+            <center>
+                <h2>Escolaridade</h2>
+                <input type="radio" name="escolaridade" value="ef"> Ensino Fundamental Completo <br>
+                <input type="radio" name="escolaridade" value="em"> Ensino Médio Completo<br>
+            </center>
+            <hr>
+            <center>
+                <h2>Disciplinas Cursadas</h2>
+                <input type="checkbox" name="inf" value="inf">Informática
+                <input type="checkbox" name="lg1" value="lg1">Lógica 1
+                <input type="checkbox" name="aw1" value="aw1">Aplicações para Web 1
+                <input type="checkbox" name="aw2" value="aw2">Aplicações para Web 2
+            </center>
+        </form>
+    </div>
+</body>
+</html>

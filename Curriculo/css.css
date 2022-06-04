@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(164, 178, 255)
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+.p1{
+    font-family: monospace;
+}
+
+.p2{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: underline;
+    color: crimson;
+}
+
+.titulo{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    font-family: sans-serif;
+    text-align: center;
+}

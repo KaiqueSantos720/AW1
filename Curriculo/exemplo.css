@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(54, 46, 46);
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    text-indent: 10px;
+    text-align: justify;
+}
+
+h1, h2, h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #bba14f;
+    display: flex;
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+.d1{
+    border: 2px solid #bba14f;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    transition: all .3s;
+    height: 10vh;
+    color: #bba14f;
+    width: 50%;
+}
+
+
+
+.d1:hover{
+    border-color: black;
+    background-color: #bba14f;
+    color: black;
+    transition: all .3s;
+}
+
+.w1{
+    border: 3px solid #bba14f;
+    border-radius: 10px;
+    width: 30%;
+    margin: auto;
+}
+
+hr{
+    color: #bba14f;
+    height: 2px;
+    background-color: #bba14f;
+}
+
+li{
+    font-size: 1.3rem;
+    font-family: 'Imprint MT Shadow';
+    display: flex;
+    color: white;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.ep{
+    word-spacing: 150px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: all .3s;
+}
+
+a:hover{
+    color: blue;
+    transition: all .3s;
+}
+
+.qq{
+    background-color: rgb(235, 224, 224);
+    border-radius: 1px;
+}
+
+h1{
+    font-style: italic;
+}

@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.c1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

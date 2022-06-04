@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #bba14f;
+    color: black;
+    display: flex;
+    justify-content: center;
+    height: 7vh;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.caixa{
+    height: 10vh;
+    width: 23.4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    border: 2px solid #bba14f;
+    transition: all 0.5s;
+}
+
+.caixa:hover{
+    box-shadow: 2px 2px 3px black;
+    transition: all 0.5s;
+    background-color: #bba14f;
+    color: black;
+    border-color: black;
+}
+
+.imagem{
+    width: 70%;
+}
+
+.jogos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    margin-top: 2%;
+
+}
+
+.jogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid #bba14f;
+    padding: 2%;
+    transition: all 0.5s;
+}
+
+.jogo:hover{
+    transition: all 0.5s;
+    transform: scale(1.05);
+}
+
+.jogo p{
+    text-align: justify;
+}
+
+#crash{
+    border-style: dashed;
+}
+
+#crash:hover{
+    border-color: #cd3618;
+    color: #cd3618;
+    box-shadow: 2px 2px 3px #cd3618;
+}
+
+#elden{
+    border-style: dotted;
+}
+
+#elden:hover{
+    border-color: #134843;
+    color: #134843;
+    box-shadow: 2px 2px 3px #134843;
+}
+
+#forza{
+    border-style: double;
+}
+
+#forza:hover{
+    border-color: #9b0202;
+    color: #9b0202;
+    box-shadow: 2px 2px 3px #9b0202;
+}
+
+#horizon{
+    border-style: dashed;
+}
+
+#horizon:hover{
+    border-color:#4da2ce;
+    color: #4da2ce;
+    box-shadow: 2px 2px 3px #4da2ce;
+}
+
+#kombat{
+    border-style: dotted;
+}
+
+#kombat:hover{
+    border-color:#f1b12c;
+    color: #f1b12c;
+    box-shadow: 2px 2px 3px #f1b12c;
+}
+
+#shadow{
+    border-style: double;
+}
+
+#shadow:hover{
+    border-color:#45bec6;
+    color: #45bec6;
+    box-shadow: 2px 2px 3px #45bec6;
+}

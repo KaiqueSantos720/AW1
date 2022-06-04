@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario1.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <form name="Cadastro_clientes">
+        <h2 >Formulário de Cadastro</h2>
+        <p> <input type="text" name="nome"></p>
+        <p> <input type="submit" name="enviar" value="Enviar"></p>
+
+        <div class="forms">
+            <input type="checkbox" name="veiculo1" value="bicicleta">Eu tenho uma bicicleta
+            <input type="checkbox" name="veiculo2" value="carro">Eu tenho um carro
+            <input type="checkbox" name="veiculo3" value="moto">Eu tenho uma moto
+        </div>
+
+        <div class="caixa">
+            <p>Selecione sua cor: </p>
+            <input type="color" name="favcor" value="#000">
+            <p>Selecione uma data: </p>
+            <input type="date" name="nascimento">
+            <input type="datetime-local" name="bdaytime">
+            <p>Selecione mês e ano: </p>
+            <input type="month" name="mesano">
+            <input type="time" name="usr_horario">
+            <input type="week" name="usr_semana">
+        </div>
+
+        <div class="caixa2">
+            <p>Entre com o email</p>
+            <input type="email" name="e-mail" placeholder="digite seu email">
+            <p>Insira o arquivo</p>
+            <input type="file" name="arquivos">
+            <p>Insira varios arquivos</p>
+            <input type="file" name="arquivos" multiple>
+            <input type="hidden" id="inputOculto" name="inputOculto" value="meuvalor">
+            
+        </div>
+
+        <input type="image" src="meci_careca.jpg" alt="Submit" width="48" height="48">
+        <p>Quantidade (entre 1 e 5) </p>
+        <input type="number" name="quantidade" min="1" max="5"> <br>
+        <br> <input type="password" name="senha" placeholder="Digite sua senha">
+    </form>
+
+    <form name="Idade">
+        <p>Qual sua idade?</p>
+        <input type="radio" name="idade" value="18_22"> 18 a 22 <br>
+        <input type="radio" name="idade" value="23_30"> 23 a 30 <br>
+        <input type="radio" name="idade" value="mais31"> acima de 30 <br>
+        <p>Defina seu nivel de satisfação</p><br>
+        <p>Pouco satisfeito
+        <input type="range" name="satisfacao" min="0" max="10">
+        Muito satisfeito</p>
+        <p>Pesqusar: <input type="search" name="q"></p>
+        <p>Telefone: <input type="tel" name="usertel"></p>
+        <p>Link do seu WebSite: <input type="url" name="webpage"></p>
+        <textarea name="" id="" cols="30" rows="10">Area do texto com um texto inicial dentro</textarea>
+    </form>
+</body>
+</html>

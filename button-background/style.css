@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: gray;
+    background: url(img/cyberpunk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background: white;
+    height: 5vh;
+    align-items: center;
+}
+
+.all-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+button{
+    transition: all .3s;
+    color: white;
+    background-color: black;
+    border: 2px solid #bba14f;
+    width: 10%;
+    height: 5vh;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn1:hover{
+    box-shadow: 0 12px 16px 0 #bba14f,0 17px 50px 0 #bba14f;
+    transition: all .3s;
+}
+
+
+.btn2:hover{
+    background: white;
+    color: black;
+    transition: all .3s;
+    transform: translateY(3rem);
+}
+
+.btn3:hover{
+    border: red groove 3px;
+    transition: all .3s;
+}
+
+.btn4:after{
+    content: "Olá";
+}
+
+.btn4:hover:after{
+    content: "Salve";
+}

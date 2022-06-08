@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.div1{
+    border: 10px solid rgb(21, 255, 0);
+    padding: 35px;
+    background: url(img/download.jpg);
+    background-repeat: no-repeat;
+}
+
+.div2{
+    border: 10px solid rgb(255, 0, 0);
+    padding: 30px;
+    background: url(img/download.jpg);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+
+.div3{
+    border: 10px solid rgb(0, 217, 255);
+    padding: 35px;
+    background: url(img/download.jpg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}

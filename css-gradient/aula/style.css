@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to left, red, blue);
+}
+
+.images {
+    border-radius: 50%;
+    width: 20%;
+    height: auto;
+    /*max-width: 235px;*/
+}
+
+.blur {
+    filter: blur(4px);
+}
+
+.brightness {
+    filter: brightness(250%);
+}
+
+.contrast {
+    filter: contrast(180%);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.huerotate {
+    filter: hue-rotate(180deg);
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.opacity {
+    filter: opacity(50%);
+}
+
+.saturate {
+    filter: saturate(7);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.shadow {
+    filter: drop-shadow(8px 8px 10px antiquewhite);
+}
+
+/*#grad1 {
+    height: 150px;
+    width: 200px;
+    background: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+
+#grad2 {
+    height: 150px;
+    width: 200px;
+    background: radial-gradient(circle, red, blue, yellow );
+}
+*/
+
+.newspaper {
+    margin: 50px;
+    column-count: 3;
+    column-gap: 40px;
+    font-size: 15px;
+    column-rule: 1px solid antiquewhite ;
+}
+

@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: linear-gradient(to left, red, blue);
+    height: 30px;
+}
+.image {
+    border-radius: 50%;
+}
+
+.shadow {
+    filter: drop-shadow(8px 8px 10px black);
+}
+
+.images{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+body {
+    background: darkcyan;
+}
+
+.black-and-white {
+    filter: grayscale(100%);
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center    
+}
+
+.grid1 {
+    height: 500px;
+    width: 500px;
+    background: radial-gradient(circle, #4b1139, #029daf, #e32551 );
+    border-radius: 50%;
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+
+.newspaper {
+    margin: 50px;
+    column-count: 3;
+    column-gap: 40px;
+    font-size: 15px;
+    column-rule: 1px solid antiquewhite ;
+}

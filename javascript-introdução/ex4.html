@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1 = prompt("Digite o primeiro valor: ");
+        n1 = parseFloat(n1)
+        let n2 = prompt("Digite o segundo valor: ");
+        n2 = parseFloat(n2)
+        let n3 = prompt("Digite o terceiro valor: ");
+        n3 = parseFloat(n3)
+
+        let numeros = [n1, n2, n3]
+
+        for(let i = 0; i < 1; i++)
+        {
+            if(numeros[i] > numeros[i+1] && numeros[i] > numeros[i+2])
+            {
+                alert("O maior número é: " + numeros[i])
+            }
+            else if(numeros[i+1] > numeros[i] && numeros[i+1] > numeros[i+2])
+            {
+                alert("O maior número é: " + numeros[i+1])
+            }
+            else
+            {
+                alert("O maior número é: " + numeros[i+2])
+            }
+        }
+
+        for(let i = 0; i < 1; i++)
+        {
+            if(numeros[i] < numeros[i+1] && numeros[i] < numeros[i+2])
+            {
+                alert("O menor número é: " + numeros[i])
+            }
+            else if(numeros[i+1] < numeros[i] && numeros[i+1] < numeros[i+2])
+            {
+                alert("O menor número é: " + numeros[i+1])
+            }
+            else
+            {
+                alert("O maior número é: " + numeros[i+2])
+            }
+        }
+
+    </script>
+</body>
+</html>

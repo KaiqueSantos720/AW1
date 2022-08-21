@@ -6,8 +6,17 @@
 
 header{
     background: linear-gradient(to left, red, blue);
-    height: 30px;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+header p {
+    color: white;
+    font-size: 3rem;
+}
+
 .image {
     border-radius: 50%;
 }
@@ -34,7 +43,8 @@ body {
 .title{
     width: 100%;
     display: flex;
-    justify-content: center    
+    justify-content: center;  
+    margin-top:7%;
 }
 
 .grid1 {
@@ -55,4 +65,10 @@ body {
     column-gap: 40px;
     font-size: 15px;
     column-rule: 1px solid antiquewhite ;
+}
+
+.tit{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }

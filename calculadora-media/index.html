@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="style">
+            <section class="content">
+                <h1>Calculadora de Média</h1>
+
+                <div class="inputs">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+
+                    <label for="nota1">Nota 1</label>
+                    <input max="10" min="0" required value={nota1} type="number" name="nota1" id="nota1">
+
+                    <label for="nota2">Nota 2</label>
+                    <input max="10" min="0" required value={nota2} type="number" name="nota2" id="nota2">
+
+                    <label for="nota3">Nota 3</label>
+                    <input max="10" min="0" required value={nota3} type="number" name="nota3" id="nota3">
+
+                    <input id="envio" type="submit" value="Enviar">
+                </div>
+
+                <div class="text">
+                    <p id="paragrafo"></p>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

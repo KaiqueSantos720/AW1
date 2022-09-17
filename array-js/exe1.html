@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let meuNome = ["K", "a", "i", "q", "u", "e"]
+        meuNome.push("*")
+        meuNome.unshift("*")
+        meuNome.splice(meuNome.indexOf("K"), 1)
+        console.log(meuNome)
+
+        console.log("\n\n\n")
+
+        let vetor = [10, 20, 30, 1]
+        let soma = 0
+
+        for(let i = 0; i < vetor.length; i++){
+            soma += vetor[i]
+        }
+        console.log(`A soma dos elementos do vetor é: ${soma}`)
+        console.log(`A multiplicação de 7 por ${vetor[3]} é: ${vetor[3] * 7}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const matrizA = [
+            [3, 4, 5],
+            [7, 5, 9],
+            [1, 2, 6]
+        ]
+        let somaA = 0
+        for(let i = 0; i < matrizA.length; i++){
+            somaA += matrizA[0][i] + matrizA[1][i] + matrizA[2][i]
+        }
+        console.log(`A soma dos valores da Matriz A é: ${somaA} \n`)
+
+
+
+        const matrizB = [
+            [5, 1, 1, 1, 1],
+            [2, 4, 2, 2, 2],
+            [3, 3, 3, 3, 3],
+            [4, 4, 4, 2, 4],
+            [5, 5, 5, 5, 1]
+        ]
+        for(let i = 0; i < matrizB.length; i++){    
+            console.log(`Número da diagonal principal: ${matrizB[i][i]} \nNúmero da diagonal principal multiplicado por 5: ${matrizB[i][i] * 5}`)
+        }
+
+        
+
+        const matrizC = [
+            [1, 1, 1],
+            [2, 2, 2],
+            [3, 3, 3],
+            [4, 4, 4],
+            [5, 5, 5]
+        ]
+        let somaC = 0
+        for(let i = 0; i < matrizC.length; i++){
+            for(let j = 0; j < matrizC[i].length; j++){
+                somaC += matrizC[i][j]
+            }
+            console.log(`Soma da linha ${i + 1} é: ${somaC}`)
+            somaC = 0
+        }
+    </script>
+</body>
+</html>

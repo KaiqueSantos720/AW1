@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3em;
+    background: linear-gradient(45deg, #00CED1, black);
+}
+
+.all{
+    display: grid;
+    width: 35%;
+    height: 25vh;
+    grid-template-columns: repeat(3, 1fr);
+    background: #222;
+    margin: 50px auto;
+    font-size: 25px;
+}
+
+.p{
+    background: #778899;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#p1{
+    border-right: 2px solid #222;
+    border-bottom: 2px solid #222;
+} 
+
+#p2{
+    border-right: 2px solid #222;
+    border-bottom: 2px solid #222;
+    border-left: 2px solid #222;
+}
+
+#p3{
+    border-bottom: 2px solid #222;
+    border-left: 2px solid #222;
+}
+
+#p4{
+    border-right: 2px solid #222;
+    border-bottom: 2px solid #222;
+    border-top: 2px solid #222;
+}
+
+#p5{
+    border: 2px solid #222;
+}
+
+#p6{
+    border-bottom: 2px solid #222;
+    border-left: 2px solid #222;
+    border-top: 2px solid #222;
+}
+
+#p7{
+    border-right: 2px solid #222;
+    border-top: 2px solid #222;
+}
+
+#p8{
+    border-left: 2px solid #222;
+    border-top: 2px solid #222;
+    border-right: 2px solid #222;
+}
+
+#p9{
+    border-left: 2px solid #222;
+    border-top: 2px solid #222;
+}
+
+.velha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h1{
+    border-bottom: 2px solid #222;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}

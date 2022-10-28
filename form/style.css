@@ -1,0 +1,69 @@
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.p{
+    display: flex;
+    justify-content: center;
+}
+
+.success{
+    color: green;
+}
+
+.error{
+    color: red;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.submit{
+    margin-bottom: 1rem;
+}
+
+#btn{
+    margin-top: 10px;
+}
+
+#btn:hover{
+    border: 2px solid black;
+    background-color: #FDF5E6;
+}
+
+.container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAF0E6;
+}
+
+#visor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    border-radius: 9px;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

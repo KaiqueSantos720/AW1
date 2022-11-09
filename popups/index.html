@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .popup{
+    width: 100%;
+    background: red;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .hide{
+    visibility: hidden;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .palavras{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .tooltips{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    opacity: 0.5;
+    background: #000;
+    height: 30vh;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .tooltip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  .modal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+  }
+
+  .modal-container{
+    display: flex;
+    width: 20%;
+    height: 10vh;
+    align-items: center;
+    background: red;
+    justify-content: space-around;
+  }
+
+  #close{
+    cursor: pointer;
+  }
+
+  .font{
+    font-size: 1rem;
+    color: #FFF;
+  }
+
+  .titulo{
+    color: #FFF;
+  }
+
+</style>
+<body>
+  <div class="modal" id="modal">
+    <div class="modal-container">
+      <p>Bem Vindo!</p>
+      <p id="close">X</p>
+    </div>
+  </div>
+
+  <div id="tooltips" class="tooltips">
+    <div class="tooltip">
+      <p class="titulo" id="s1">Elefante</p>
+      <div id="popup1" class="popup hide">
+        <h1 class="font">Os elefantes pertencem à Classe mammalia, Ordem Proboscidea e Família Elephantidae.</h1>
+      </div>
+    </div>
+
+    <div class="tooltip">
+      <p class="titulo" id="s2">Macaco</p>
+      <div id="popup2" class="popup hide">
+        <h1 class="font">Os macacos são mamíferos do grupo dos primatas.</h1>
+      </div>
+    </div>
+
+    <div class="tooltip">
+      <p class="titulo" id="s3">Leão</p>
+      <div id="popup3" class="popup hide">
+        <h1 class="font">O leão é uma espécie de mamífero carnívoro do gênero Panthera e da família Felidae</h1>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+  const toogle = (index) => {
+    if(index === 1){
+      document.getElementById("popup1").classList.toggle("hide")
+      console.log("chegou aqui")
+    }
+    if(index === 2){
+      document.getElementById("popup2").classList.toggle("hide")
+    }
+    if(index === 3){
+      document.getElementById("popup3").classList.toggle("hide")
+    }
+  }
+
+  const close = () => {
+    document.getElementById("modal").style.display = "none"
+    document.getElementById("tooltips").style.opacity = 1
+  }
+
+  document.getElementById("close").addEventListener("click", () => {
+    close()
+  })
+
+  document.getElementById("s1").addEventListener("mouseover", () => {
+    console.log("xfghfd")
+    toogle(1)
+  })
+
+  document.getElementById("s1").addEventListener("mouseout", () => {
+    toogle(1)
+  })
+
+  document.getElementById("s2").addEventListener("mouseover", () => {
+    toogle(2)
+  })
+
+  document.getElementById("s2").addEventListener("mouseout", () => {
+    toogle(2)
+  })
+
+  document.getElementById("s3").addEventListener("mouseover", () => {
+    toogle(3)
+  })
+
+  document.getElementById("s3").addEventListener("mouseout", () => {
+    toogle(3)
+  })
+</script>
